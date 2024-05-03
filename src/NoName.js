@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const NoName = () => {
-  return (
-    <div className='wrap'>
-        <h1>또혼자진도나가네</h1>
-    </div>
-  )
-}
+  return <div className="wrap">하이하이</div>;
+};
 
 export default NoName;
