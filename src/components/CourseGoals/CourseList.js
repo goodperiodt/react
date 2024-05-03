@@ -1,10 +1,13 @@
 import React from 'react';
 import './CourseList.css';
+import CourseItem from './CourseItem';
 
-const CourseList = () => {
+const CourseList = ({ items }) => {
   return (
     <ul className="goal-list">
-      <li></li>
+      {items.map((item) => {
+        return <CourseItem key={item.id} item={item} />;
+      })}
     </ul>
   );
 };
